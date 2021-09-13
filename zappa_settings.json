@@ -1,0 +1,17 @@
+{
+    "dev": {
+        "app_function": "app.webapp",
+        "aws_region": "us-east-1",
+        "profile_name": "default",
+        "project_name": "ece1779a3",
+        "runtime": "python3.8",
+        "s3_bucket": "ece1779photos2",
+        "keep_warm": false,
+        "cors": true,
+        "context_header_mappings": {
+            "API-Stage": "stage",
+            "email": "authorizer.claims.email",
+            "Cognito-Username": "authorizer.claims.cognito:username"
+        }
+    }
+}

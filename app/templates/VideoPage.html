@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>test</title>
+    <link rel="shortcut icon" href="#">
+    <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='styles/VideoPage.css')}}">
+
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: powderblue;
+            padding-left: 50px;
+            padding-right: 50px;
+        }
+        .header {
+            text-align: center;
+            color: white;
+            font-size: 30px;
+        }
+    </style>
+</head>
+
+<body onload="doEverything()">
+<div class="header" id="big_header">
+    <h1>Rock Paper Scissors!</h1>
+
+<!--    <div id="radioform_wrapper">-->
+<!--        <form name="formAPI" id="radioform">-->
+<!--            <label>-->
+<!--                <input type="radio" name="radioAPI" checked value=""/>-->
+<!--                Local testing-->
+<!--            </label>-->
+<!--            <label>-->
+<!--                <input type="radio" name="radioAPI" value="/dev"/>-->
+<!--                Zappa /dev+-->
+<!--            </label>-->
+<!--        </form>-->
+<!--    </div>-->
+
+</div>
+<div id="statustracker">Status</div>
+<div id="video container">
+    <video autoplay="true" id="video_element"></video>
+</div>
+<div id="screenshot_wrapper">
+    <canvas id="canvas"></canvas>
+</div>
+<div>
+    <button id="onloadtestbutton">onload test</button>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script rel="script" src="{{url_for('static', filename='scripts/VideoPage.js')}}"></script>
+</body>
+</html>

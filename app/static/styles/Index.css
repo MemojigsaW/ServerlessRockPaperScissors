@@ -1,0 +1,29 @@
+
+
+.login {
+    margin: 30px auto;
+    padding: 20px 20px 20px;
+    width: 750px;
+    background: white;
+    border-radius: 3px;
+}
+
+.center {
+text-align: center;
+}
+.right {
+text-align: right;
+}
+
+.button1 {
+    border: none;
+    color: white;
+    padding: 10px 50px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 16px;
+    margin: 4px 2px;
+    background-color: #008CBA;
+}
+ .button2 {font-size: 12px; font-weight: bold; padding: 10px 10px; background-color:#ccffdd}
+ .button3 {font-size: 12px; font-weight: bold; padding: 10px 10px; background-color:#ffcccc}

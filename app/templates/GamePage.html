@@ -1,0 +1,53 @@
+{% extends "RPSResults.html" %}
+{% block content %}
+
+        <form>
+            <button class="button button2" formaction="{{url_for('loadIndexPage')}}">Back To Home Page</button>
+        </form>
+
+<div class="header" id="big_header">
+    <h1>{{game_results}}</h1>
+</div>
+
+<div id="label_wrapper">
+    <div class="play_label">
+
+        <span style="font-size:35px">{{Computer}}</span>
+    </div>
+    <div class="play_label">
+
+        <span style="font-size:35px">{{Player}}</span>
+    </div>
+</div>
+<br>
+<div id="result wrapper">
+    <div id="computer" class="playresult">
+        <div class="play_image_wrapper">
+            <img src="{{ url }}" class="play_image">
+        </div>
+    </div>
+    <div id="player" class="playresult">
+        <div class="play_image_wrapper">
+            <img src="{{ url1 }}" class="play_image">
+        </div>
+    </div>
+</div>
+<br>
+<div id="score_wrapper">
+    <div class="play_score">
+        <span>Computer Score: {{Computer_Score}}</span>
+    </div>
+    <div class="play_score">
+        <span>Player Score: {{Player_Score}}</span>
+    </div>
+</div>
+<br>
+<div id="btwrapper">
+        <form>
+            <button class="button button1" formaction="{{url_for('loadVideoPage')}}">Play Again!</button>
+        </form>
+
+</div>
+
+
+{% endblock%}

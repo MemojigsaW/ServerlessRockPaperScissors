@@ -1,0 +1,39 @@
+/*#id or .class {*/
+/*    border-style: solid;*/
+/*    border-color: black;*/
+/*    border-width: thick;*/
+/*}*/
+
+#statustracker{
+    text-align: center;
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-top: 2em;
+    padding-bottom: 1em;
+    font-size: x-large;
+    color: green;
+}
+#big_header {
+    width: 100%;
+}
+
+#video_element {
+    margin-left: 25%;
+    margin-right: 25%;
+    max-width: 50%;
+}
+
+#screenshot_wrapper {
+    width: 100%;
+}
+
+#canvas{
+    margin-left: 25%;
+    margin-right: 25%;
+    max-width: 50%;
+    display: none;
+}
+
+#onloadtestbutton{
+    display: none;
+}
